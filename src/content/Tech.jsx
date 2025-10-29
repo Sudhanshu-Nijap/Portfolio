@@ -16,7 +16,7 @@ export default function Tech({ darkMode = false }) {
       <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base max-w-full sm:max-w-3xl leading-relaxed">
         <li>
           <span className="font-semibold">Languages:</span>{" "}
-          TypeScript/JavaScript, Java, Python
+          Python, TypeScript/JavaScript
         </li>
         <li>
           <span className="font-semibold">Backend:</span>{" "}
