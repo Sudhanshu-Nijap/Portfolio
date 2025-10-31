@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 import DarkModeToggle from "../components/DarkModeToggle";
 import Footer from "../components/Footer";
 import HoverLink from "../components/HoverLink";
+import { FaGithub, FaStar } from "react-icons/fa"; // <-- Added FaStar
 
 import Me from "../content/Me";
 import Experience from "../content/Experience";
@@ -40,13 +41,31 @@ export default function About() {
         ></div>
       )}
 
-      {/* Dark Mode Toggle */}
+      {/* Top Controls (Dark Mode + GitHub Button) */}
       <div
-        className={`fixed top-5 z-50 transition-all duration-300 ${
+        className={`fixed top-5 z-50 flex items-center gap-3 transition-all duration-300 ${
           menuOpen ? "left-64 sm:left-72" : "left-4 sm:left-16"
         }`}
       >
         <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+      </div>
+
+      {/* GitHub Star Button */}
+      <div className="fixed top-5 right-5 z-50">
+        <a
+          href="https://github.com/Sudhanshu-Nijap/Portfolio.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`flex items-center gap-2 px-3 py-2 rounded-xl font-medium transition-all duration-300 shadow-md hover:scale-105 ${
+            darkMode
+              ? "bg-[#3B3E48] text-white hover:bg-[#4A4D58]"
+              : "bg-gray-200 text-black hover:bg-gray-300"
+          }`}
+        >
+          <FaGithub className="text-xl" />
+          <span>Star Me</span>
+          <FaStar className="text-yellow-400 text-lg" /> {/* <-- Changed here */}
+        </a>
       </div>
 
       {/* Main Content */}
@@ -87,7 +106,7 @@ export default function About() {
 
         {/* Footer */}
         <footer className="text-center py-5 border-t dark:border-gray-700 border-gray-300 mt-10">
-          <Footer darkMode={darkMode}/>
+          <Footer darkMode={darkMode} />
         </footer>
       </main>
     </div>

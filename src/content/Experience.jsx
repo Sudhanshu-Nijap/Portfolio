@@ -20,7 +20,7 @@ export default function Experience({ darkMode = false }) {
           QuixilinxLPP
         </HoverLink>
         <span className="sm:ml-2 mt-1 sm:mt-0 text-base sm:text-lg">
-          | Software Engineer
+          Software Engineer
         </span>
         <span className="text-sm sm:text-lg opacity-60 sm:ml-2 mt-1 sm:mt-0">
           June '25 – Sept '25

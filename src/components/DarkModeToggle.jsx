@@ -6,8 +6,8 @@ const DarkModeToggle = ({ darkMode, setDarkMode }) => {
     <button
       className={`p-2 rounded-md shadow-lg transition-colors duration-200 ${
         darkMode 
-          ? 'bg-[#3B3E48] text-white' 
-          : 'bg-white text-gray-800'
+          ? 'bg-[#3B3E48] text-white hover:bg-[#4A4D58]' 
+          : 'bg-white text-gray-800 hover:bg-gray-300'
       }`}
       onClick={() => setDarkMode(!darkMode)}
       aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
