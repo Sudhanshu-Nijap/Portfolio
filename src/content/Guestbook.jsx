@@ -138,30 +138,30 @@ export default function Guestbook() {
               </button>
             ) : (
               <>
-                <div className="flex gap-2 mb-2">
-                  <input
-                    id="guestInput"
-                    type="text"
-                    placeholder="Write a message..."
-                    className={`flex-1 px-4 py-2 rounded-lg border focus:outline-none ${darkMode
-                        ? "bg-[#1E1E1E] border-gray-700 text-gray-200"
-                        : "bg-white border-gray-300 text-gray-800"
-                      }`}
-                  />
-                  <button
-                    onClick={() => {
-                      const input = document.getElementById("guestInput");
-                      send(input.value);
-                      input.value = "";
-                    }}
-                    className={`px-5 py-2 rounded-lg shadow ${darkMode
-                        ? "bg-white text-black"
-                        : "bg-black text-white"
-                      }`}
-                  >
-                    Send
-                  </button>
-                </div>
+                <div className="flex items-center gap-2 mb-2">
+  <input
+    id="guestInput"
+    type="text"
+    placeholder="Write a message..."
+    className={`flex-1 px-4 py-2 rounded-lg border focus:outline-none ${
+      darkMode
+        ? "bg-[#1E1E1E] border-gray-700 text-gray-200"
+        : "bg-white border-gray-300 text-gray-800"
+    }`}
+  />
+  <button
+    onClick={() => {
+      const input = document.getElementById("guestInput");
+      send(input.value);
+      input.value = "";
+    }}
+    className={`px-3 py-2 rounded-lg shadow text-sm ${
+      darkMode ? "bg-white text-black" : "bg-black text-white"
+    }`}
+  >
+    Send
+  </button>
+</div>
 
                 <button
                   onClick={handleSignOut}
