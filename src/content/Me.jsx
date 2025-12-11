@@ -19,7 +19,7 @@ export default function Me({ darkMode = false }) {
 
       {/* Add your content here */}
       <p className="text-base sm:text-lg text-justify">
-        Hi! I'm Sudhanshu, a Full-Stack Developer and Machine Learning
+        Hi!<span className="inline-block animate-wave">👋</span> I'm Sudhanshu, a Full-Stack Developer and Machine Learning
         enthusiast who loves Competitive Programming and building cool web
         projects.
       </p>

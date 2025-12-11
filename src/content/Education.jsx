@@ -1,13 +1,14 @@
 import HoverLink from "../components/HoverLink";
 import AnchorIcon from "../components/AnchorIcon";
+import xie from "../assets/xie.png";
+import vp from "../assets/vp.jpg";
 
 export default function Education({ darkMode = false }) {
   return (
     <section
       id="education"
-      className={`transition-colors duration-300 ${
-        darkMode ? "text-gray-100" : "text-gray-900"
-      }`}
+      className={`transition-colors duration-300 ${darkMode ? "text-gray-100" : "text-gray-900"
+        }`}
     >
       <h1 className="group relative text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 scroll-mt-32 mt-8 sm:mt-10">
         Education
@@ -15,7 +16,12 @@ export default function Education({ darkMode = false }) {
       </h1>
 
       {/* Xavier */}
-      <div className="flex flex-col sm:flex-row sm:items-center mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap">
+      <div className="flex flex-col sm:flex-row sm:items-center mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap gap-2">
+        <img
+          src = {xie}
+          alt="XIE Logo"
+          className="w-6 h-6 object-contain"
+        />
         <HoverLink href="https://www.xavier.ac.in/" darkMode={darkMode}>
           Xavier Institute of Engineering
         </HoverLink>
@@ -30,7 +36,12 @@ export default function Education({ darkMode = false }) {
       </ul>
 
       {/* Vidyalankar */}
-      <div className="flex flex-col sm:flex-row sm:items-center mt-5 sm:mt-6 mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap">
+      <div className="flex flex-col sm:flex-row sm:items-center mt-5 sm:mt-6 mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap gap-2">
+        <img
+          src={vp}
+          alt="VP Logo"
+          className="w-6 h-6 object-contain"
+        />
         <HoverLink href="https://vpt.edu.in/" darkMode={darkMode}>
           Vidyalankar Polytechnic
         </HoverLink>

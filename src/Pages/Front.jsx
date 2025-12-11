@@ -1,4 +1,4 @@
-import { Github, Mail, Linkedin } from "lucide-react";
+import { Github, Mail, Linkedin, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 
@@ -29,6 +29,15 @@ export default function Front() {
             />
           </a>
 
+          <a
+            href="https://www.youtube.com/@sudhanshunijap"  // <-- replace with your channel
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Youtube size={42} className="text-white transition-colors duration-200" />
+          </a>
+
+
           <a href="mailto:sudhanshun10b3720@gmail.com" target="_blank" rel="noopener noreferrer">
             <Mail size={40} className="text-white  transition-colors duration-200" />
           </a>
@@ -39,8 +48,34 @@ export default function Front() {
         </div>
 
         {/* About Page Link */}
-        <div className="flex justify-center text-lg sm:text-xl md:text-2xl font-sans text-gray-300 mb-6">
+        {/* <div className="flex justify-center text-lg sm:text-xl md:text-2xl font-sans text-gray-300 mb-6">
           <Link to="/whoami" className="transition-colors duration-200">~/whoami</Link>
+        </div> */}
+
+        <div className="flex flex-col items-center mb-6 font-mono">
+          {/* Terminal Prompt */}
+          <span className="text-green-400 text-lg sm:text-xl md:text-2xl select-none">
+            user@portfolio:~$
+          </span>
+
+          {/* Clickable Command */}
+          <Link
+            to="/whoami"
+            className="text-lg sm:text-xl md:text-2xl text-gray-300 hover:text-white
+               cursor-pointer group flex items-center gap-1"
+          >
+            <span className="group-hover:text-green-400 transition-colors duration-200">
+              whoami
+            </span>
+
+            {/* Blinking cursor */}
+            <span className="w-[10px] h-[22px] bg-green-400 animate-pulse"></span>
+          </Link>
+
+          {/* Instruction */}
+          <span className="text-sm text-gray-500 mt-2 italic">
+            # click the command to view portfolio
+          </span>
         </div>
       </main>
 

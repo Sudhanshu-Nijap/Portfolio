@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import DarkModeToggle from "../components/DarkModeToggle";
+import GuestbookButton from "../components/GuestbookButton";
 import Footer from "../components/Footer";
 import HoverLink from "../components/HoverLink";
-import { FaGithub, FaStar } from "react-icons/fa"; // <-- Added FaStar
 
 import Me from "../content/Me";
 import Experience from "../content/Experience";
@@ -27,7 +27,7 @@ export default function About() {
   return (
     <div
       className={`relative flex min-h-screen font-sans transition-colors duration-300 ${
-        darkMode ? "bg-[#1E1E1E] text-gray-200" : "bg-[#D4D4D4] text-gray-800"
+        darkMode ? "bg-[#1E1E1E] text-gray-200" : "bg-[#FFFBEB] text-gray-800"
       }`}
     >
       {/* Sidebar */}
@@ -48,10 +48,11 @@ export default function About() {
         }`}
       >
         <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+        <GuestbookButton darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
 
       {/* GitHub Star Button */}
-      <div className="fixed top-5 right-5 z-50">
+      {/* <div className="fixed top-5 right-5 z-50">
         <a
           href="https://github.com/Sudhanshu-Nijap/Portfolio.git"
           target="_blank"
@@ -64,9 +65,9 @@ export default function About() {
         >
           <FaGithub className="text-xl" />
           <span>Star Me</span>
-          <FaStar className="text-yellow-400 text-lg" /> {/* <-- Changed here */}
+          <FaStar className="text-yellow-400 text-lg" /> 
         </a>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <main

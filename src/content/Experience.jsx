@@ -1,13 +1,13 @@
 import HoverLink from "../components/HoverLink";
 import AnchorIcon from "../components/AnchorIcon";
+import quixilinx from "../assets/quixilinx.png";
 
 export default function Experience({ darkMode = false }) {
   return (
     <section
       id="experience"
-      className={`transition-colors duration-300 ${
-        darkMode ? "text-gray-100" : "text-gray-900"
-      }`}
+      className={`transition-colors duration-300 ${darkMode ? "text-gray-100" : "text-gray-900"
+        }`}
     >
       <h1 className="group relative text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 scroll-mt-32 mt-8 sm:mt-10">
         Professional Experience
@@ -15,7 +15,12 @@ export default function Experience({ darkMode = false }) {
       </h1>
 
       {/* Quixilinx block */}
-      <div className="flex flex-col sm:flex-row sm:items-center mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap">
+      <div className="flex flex-col sm:flex-row sm:items-center mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap gap-2">
+        <img
+          src={quixilinx}
+          alt="Quixilinx Logo"
+          className="w-6 h-6 object-contain"
+        />
         <HoverLink href="https://quixilinx.com/" darkMode={darkMode}>
           QuixilinxLPP
         </HoverLink>

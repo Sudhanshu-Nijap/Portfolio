@@ -29,14 +29,20 @@ const Sidebar = ({ darkMode, menuOpen, setMenuOpen }) => {
     <>
       {/* Toggle Button */}
       <button
-        className={`fixed top-5 left-4 z-50 p-2 shadow-lg rounded-md transition-colors duration-200 ${
+        className={`group fixed top-5 left-4 z-50 p-2 shadow-lg rounded-md transition-colors duration-200 ${
           darkMode 
             ? 'bg-[#3B3E48] hover:bg-[#4A4D58] text-white' 
-            : 'bg-white hover:bg-gray-300 text-gray-800'
+            : 'bg-[#FEE8A3] hover:bg-[#FEF3C7] text-gray-800'
         }`}
         onClick={() => setOpen(!open)}
       >
         {open ? <X size={24} /> : <Menu size={24} />}
+
+        <span
+        className="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-gray-800 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+      >
+        Menu
+      </span>
       </button>
 
       {/* Sidebar */}
@@ -44,7 +50,7 @@ const Sidebar = ({ darkMode, menuOpen, setMenuOpen }) => {
         className={`fixed top-0 left-0 h-screen w-64 p-6 flex flex-col gap-4 transform transition-all duration-300 z-50 ${
           darkMode 
             ? 'bg-[#3B3E48] text-white' 
-            : 'bg-gray-100 text-gray-800'
+            : 'bg-[#FEF3C7] text-gray-800'
         } ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         {/* Header: Menu text + Close button */}
@@ -54,7 +60,7 @@ const Sidebar = ({ darkMode, menuOpen, setMenuOpen }) => {
             className={`p-1 rounded transition-colors duration-200 ${
               darkMode 
                 ? 'text-white hover:bg-gray-500' 
-                : 'text-gray-800 hover:bg-gray-200'
+                : 'text-gray-800 hover:bg-[#FEE8A3]'
             }`}
             onClick={() => setOpen(false)}
           >
@@ -70,7 +76,7 @@ const Sidebar = ({ darkMode, menuOpen, setMenuOpen }) => {
             className={`flex items-center gap-3 p-2 rounded transition-colors duration-200 ${
               darkMode 
                 ? 'hover:bg-gray-500' 
-                : 'hover:bg-gray-200'
+                : 'hover:bg-[#FEE8A3]'
             }`}
             onClick={() => setOpen(false)}
           >

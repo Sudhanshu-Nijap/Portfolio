@@ -63,7 +63,7 @@ export default function Certificate({ certificates = sampleCertificates, darkMod
 
       <div className="flex flex-col items-center">
         {/* Certificate Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl ">
           {sortedCertificates.map((cert) => (
             <a
               key={cert.id}
@@ -73,7 +73,7 @@ export default function Certificate({ certificates = sampleCertificates, darkMod
               className={`rounded-xl p-5 border transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between
     ${darkMode
                   ? "bg-[#3B3E48] border-gray-700 hover:border-gray-400 hover:bg-[#4A4D57] hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]"
-                  : "bg-white border-gray-200 hover:border-gray-400 hover:bg-gray-50"
+                  : "bg-[#FEE8A3] border-[#FDC135] hover:border-[#C28100] hover:bg-[#FDD870]"
                 }`}
             >
               <div>

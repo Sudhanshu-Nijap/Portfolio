@@ -63,7 +63,7 @@ export default function Achievement({ darkMode = false }) {
           />
         </div>
 
-        <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl mx-auto">
+        <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl mx-auto text-justify">
           <li>
             Competed in a DSA (Data Structures & Algorithms) contest testing
             coding efficiency, logic, and problem-solving under pressure.
@@ -92,7 +92,7 @@ export default function Achievement({ darkMode = false }) {
           />
         </div>
 
-        <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl mx-auto">
+        <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl mx-auto text-justify">
           <li>
             Participated in an inter-college 6-hour Mini Hackathon as part of a
             3-person team, building a complete Student Council Portal.
