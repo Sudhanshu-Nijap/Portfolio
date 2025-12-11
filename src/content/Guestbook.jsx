@@ -138,15 +138,17 @@ export default function Guestbook() {
               </button>
             ) : (
               <>
-                <div className="flex items-center gap-2 mb-2">
+                <div
+  className={`w-full relative border rounded-lg px-4 py-2 mb-4 ${
+    darkMode ? "border-gray-700 bg-[#2A2A2A]" : "border-gray-300 bg-white"
+  }`}
+>
   <input
     id="guestInput"
     type="text"
     placeholder="Write a message..."
-    className={`flex-1 px-4 py-2 rounded-lg border focus:outline-none ${
-      darkMode
-        ? "bg-[#1E1E1E] border-gray-700 text-gray-200"
-        : "bg-white border-gray-300 text-gray-800"
+    className={`w-full pr-20 py-2 rounded-lg border-none focus:outline-none ${
+      darkMode ? "bg-[#2A2A2A] text-gray-200" : "bg-white text-gray-800"
     }`}
   />
   <button
@@ -155,7 +157,7 @@ export default function Guestbook() {
       send(input.value);
       input.value = "";
     }}
-    className={`px-3 py-2 rounded-lg shadow text-sm ${
+    className={`absolute right-2 top-1/2 -translate-y-1/2 px-4 py-1 rounded-lg shadow text-sm ${
       darkMode ? "bg-white text-black" : "bg-black text-white"
     }`}
   >
