@@ -16,42 +16,43 @@ export default function Education({ darkMode = false }) {
       </h1>
 
       {/* Xavier */}
-      <div className="flex flex-col sm:flex-row sm:items-center mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap gap-2">
-        <img
-          src = {xie}
-          alt="XIE Logo"
-          className="w-6 h-6 object-contain"
-        />
-        <HoverLink href="https://www.xavier.ac.in/" darkMode={darkMode}>
-          Xavier Institute of Engineering
-        </HoverLink>
-        <span className="text-sm sm:text-lg opacity-60 sm:ml-2 mt-1 sm:mt-0">
-          2024 – Present
-        </span>
-      </div>
-      <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl text-justify">
-        <li className="font-semibold">
-          Bachelor of Engineering (BE), Computer Engineering
-        </li>
-      </ul>
+<div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 text-lg sm:text-xl">
+  <img
+    src={xie}
+    alt="XIE Logo"
+    className="w-6 h-6 object-contain flex-shrink-0"
+  />
+  <HoverLink href="https://www.xavier.ac.in/" darkMode={darkMode}>
+    Xavier Institute of Engineering
+  </HoverLink>
+  <span className="text-sm sm:text-lg opacity-60 flex-shrink-0">
+    2024 – Present
+  </span>
+</div>
+<ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl text-justify">
+  <li className="font-semibold">
+    Bachelor of Engineering (BE), Computer Engineering
+  </li>
+</ul>
 
-      {/* Vidyalankar */}
-      <div className="flex flex-col sm:flex-row sm:items-center mt-5 sm:mt-6 mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap gap-2">
-        <img
-          src={vp}
-          alt="VP Logo"
-          className="w-6 h-6 object-contain"
-        />
-        <HoverLink href="https://vpt.edu.in/" darkMode={darkMode}>
-          Vidyalankar Polytechnic
-        </HoverLink>
-        <span className="text-sm sm:text-lg opacity-60 sm:ml-2 mt-1 sm:mt-0">
-          2021 – 2024
-        </span>
-      </div>
-      <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl">
-        <li className="font-semibold">Diploma, Computer Engineering</li>
-      </ul>
+{/* Vidyalankar */}
+<div className="flex flex-wrap items-center gap-2 mt-5 sm:mt-6 mb-3 sm:mb-4 text-lg sm:text-xl">
+  <img
+    src={vp}
+    alt="VP Logo"
+    className="w-6 h-6 object-contain flex-shrink-0"
+  />
+  <HoverLink href="https://vpt.edu.in/" darkMode={darkMode}>
+    Vidyalankar Polytechnic
+  </HoverLink>
+  <span className="text-sm sm:text-lg opacity-60 flex-shrink-0">
+    2021 – 2024
+  </span>
+</div>
+<ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base leading-relaxed max-w-full sm:max-w-3xl">
+  <li className="font-semibold">Diploma, Computer Engineering</li>
+</ul>
+
     </section>
   );
 }

@@ -15,22 +15,23 @@ export default function Experience({ darkMode = false }) {
       </h1>
 
       {/* Quixilinx block */}
-      <div className="flex flex-col sm:flex-row sm:items-center mb-3 sm:mb-4 text-lg sm:text-xl flex-wrap gap-2">
+      <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4 text-lg sm:text-xl">
         <img
           src={quixilinx}
           alt="Quixilinx Logo"
-          className="w-6 h-6 object-contain"
+          className="w-6 h-6 object-contain flex-shrink-0"
         />
         <HoverLink href="https://quixilinx.com/" darkMode={darkMode}>
           QuixilinxLPP
         </HoverLink>
-        <span className="sm:ml-2 mt-1 sm:mt-0 text-base sm:text-lg">
+        <span className="text-base sm:text-lg flex-shrink-0">
           Software Engineer
         </span>
-        <span className="text-sm sm:text-lg opacity-60 sm:ml-2 mt-1 sm:mt-0">
+        <span className="text-sm sm:text-lg opacity-60 flex-shrink-0">
           June '25 – Sept '25
         </span>
       </div>
+
 
       <ul className="list-disc list-inside space-y-2 sm:space-y-3 text-sm sm:text-base max-w-full sm:max-w-3xl leading-relaxed text-justify">
         <li>

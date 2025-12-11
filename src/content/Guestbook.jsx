@@ -111,8 +111,10 @@ export default function Guestbook() {
 
       {/* MAIN CONTENT */}
       <main className="flex-1 h-full overflow-hidden pl-6 pr-6 transition-all">
-        <section className="max-w-3xl mx-auto h-full flex flex-col mt-20 px-4 sm:px-6 overflow-hidden">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-3 mt-10 text-center">
+        {/* <section className="max-w-3xl mx-auto h-full flex flex-col mt-20 px-4 sm:px-6 overflow-hidden"> */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 h-full flex flex-col overflow-hidden pt-10 sm:pt-12">
+   
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 mt-10">
             Guestbook <span className="text-green-500">🌱</span>
           </h1>
 
